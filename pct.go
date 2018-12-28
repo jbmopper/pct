@@ -20,7 +20,7 @@ func ParsePercent(s string) (float64, error) {
 		case 2:
 			r = "0." + s
 		default:
-			r = s[:2] + "." + s[2:]
+			r = s[:l-2] + "." + s[l-2:]
 		}
 		return r
 	}
